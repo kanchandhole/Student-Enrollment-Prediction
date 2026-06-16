@@ -56,7 +56,7 @@ EDA Student Enrollments Prediction
 
 ##   How It Works
 ```
-📁 Data Cleaning — Data_Cleaning_student_enrollments_prediction.ipynb
+ 📁 Data Cleaning — Data_Cleaning_student_enrollments_prediction.ipynb
 
 Raw student data loaded (student data modified 1update.csv)
         ↓
@@ -257,10 +257,10 @@ Standardized Registration column (lowercase, strip spaces)
         ↓
 Fitted OneHotEncoder on Purpose column → saved as encoder.pkl 
         ↓
-Fitted LabelEncoder on Registration column → saved as label_encoder.pkl ```
+Fitted LabelEncoder on Registration column → saved as label_encoder.pkl
+```
 
-
-##  Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -273,7 +273,8 @@ Fitted LabelEncoder on Registration column → saved as label_encoder.pkl ```
 | Joblib | Save and load ML model |
 | SMOTE | Handle class imbalance in data |
 
-##  Model Performance
+
+## Model Performance
 
 | Model | Accuracy |
 |-------|----------|
@@ -415,6 +416,7 @@ streamlit run app.py
 python google_form_integration.py
 
 ##  Access Links
+
 ```
 What                          URL
 Streamlit UI                 http://localhost:8501
@@ -436,7 +438,7 @@ Prediction saved back to Google Sheet
 No manual work needed!
 ```
 
-##   Important Notes
+## Important Notes
 
 * Never share your credentials.json — it contains your Google Cloud private key
 * Every user must create their own credentials.json following PART A to PART I above
@@ -444,7 +446,7 @@ No manual work needed!
 * All 3 terminals must stay open while using the project
 
 
-##   About
+## About
 
 Intern: Kanchan Charandas Dhole
 Company: Percept Infosystem Consultancy, Nagpur
