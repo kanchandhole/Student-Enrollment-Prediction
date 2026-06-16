@@ -1,0 +1,24 @@
+#Screet Files
+credentials.json
+#Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+#Virtual Environment
+venv/
+env/
+stud/
+.env
+#Jupyter notebook checkpoints
+.ipynb_checkpoints
+#VS Code settings
+.vscode/
+# Model files (large files - optional)
+# Uncomment below if you want to exclude model files
+# *.pkl
+ 
+# OS files
+.DS_Store
+Thumbs.db
