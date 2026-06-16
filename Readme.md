@@ -261,27 +261,26 @@ Fitted LabelEncoder on Registration column → saved as label_encoder.pkl ```
 
 
 ##  Tech Stack
-```
-Tool                            Purpose
 
-Python                          Core programming language
-Pandas                          Data cleaning and analysis
-Scikit-learn                    ML model training
-FastAPI                         REST API development
-Streamlit                       Web UI for predictions
-gspread                         Google Sheets integration
-joblib                          Save and load ML model
-SMOTE                           Handle class imbalance in data
-
-```
+| Tool | Purpose |
+|------|---------|
+| Python | Core programming language |
+| Pandas | Data cleaning and analysis |
+| Scikit-learn | ML model training |
+| FastAPI | REST API development |
+| Streamlit | Web UI for predictions |
+| gspread | Google Sheets integration |
+| Joblib | Save and load ML model |
+| SMOTE | Handle class imbalance in data |
 
 ##  Model Performance
-```
-Model                           Accuracy
-Logistic Regression             91.7%
-Decision Tree                   92.6%
-Random Forest                   92.6%
-```
+
+| Model | Accuracy |
+|-------|----------|
+| Logistic Regression | 91.7% |
+| Decision Tree | 92.6% |
+| Random Forest | 92.6% |
+
 Best Model:  Decision Tree / Random Forest with 92.6% accuracy
 
 ##   Setup Instructions:
