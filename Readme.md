@@ -32,22 +32,27 @@ Built an end-to-end ML system that cleans and learns from historical student dat
 * Integrated with the company's Google Form — predictions happen automatically when a student submits the form
 
 
-##  Project Structure:
+##  Project Structure
 
-"""   EDA Student Enrollments Prediction
-├──   Data_Cleaning_student_enrollments_prediction.ipynb  # Raw data cleaning & preprocessing
-├──   EDA_student_enrollments_prediction_.ipynb           # Exploratory Data Analysis
-├──   Google_form_integration.py                          # Real-time Google Form automation
-├──   save_artifacts.py                                   # Save trained model artifacts
-├──   app.py                                              # Main application entry point
-├──   main.py                                             # Core ML prediction logic
-├──   pipeline.pkl                                        # Trained ML model pipeline
-├──   encoder.pkl                                         # Text feature encoder
-├──   label_encoder.pkl                                   # Label encoder for output classes
-├──   student data modified 1update.csv                   # Raw original student inquiry dataset
-├──   1students_cleaned_checking_imblanced 1.csv          # Cleaned dataset used for EDA & training
-├──   Requirements.txt                                    # Python dependencies
-└──   Readme.md                                           # Project documentation """
+```
+EDA Student Enrollments Prediction
+│
+├── main.py                                        → FastAPI backend
+├── app.py                                         → Streamlit frontend
+├── save_artifacts.py                              → Saves encoder and label encoder
+├── google_form_integration.py                     → Auto-predicts from Google Form
+├── pipeline.pkl                                   → Trained ML model
+├── encoder.pkl                                    → OneHotEncoder for Purpose
+├── label_encoder.pkl                              → LabelEncoder for Registration
+├── requirements.txt                               → Python dependencies
+├── EDA_student_enrollments_prediction_.ipynb      → EDA and ML model notebook
+├── Data_Cleaning_student_enrollments_prediction.ipynb → Data cleaning notebook
+├── 1students_cleaned_checking_imblanced 1.csv     → Cleaned dataset
+├── student data modified 1update.csv              → Raw original dataset
+├── percept logo.png                               → Institute logo
+├── .gitignore                                     → Files ignored by GitHub
+└── README.md                                      → Project documentation
+```
 
 ##   How It Works
 
