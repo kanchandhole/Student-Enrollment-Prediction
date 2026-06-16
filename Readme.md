@@ -288,6 +288,7 @@ Best Model:  Decision Tree / Random Forest with 92.6% accuracy
 
 ## Step 1 — Clone Repository
 git clone https://github.com/kanchandhole/Student-Enrollment-Prediction.git
+
 cd student-enrollment-prediction
 
 ## Step 2 — Install Dependencies
