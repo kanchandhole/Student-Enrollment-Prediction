@@ -55,7 +55,7 @@ EDA Student Enrollments Prediction
 ```
 
 ##   How It Works
-
+```
 📁 Data Cleaning — Data_Cleaning_student_enrollments_prediction.ipynb
 
 Raw student data loaded (student data modified 1update.csv)
@@ -257,11 +257,11 @@ Standardized Registration column (lowercase, strip spaces)
         ↓
 Fitted OneHotEncoder on Purpose column → saved as encoder.pkl 
         ↓
-Fitted LabelEncoder on Registration column → saved as label_encoder.pkl """
+Fitted LabelEncoder on Registration column → saved as label_encoder.pkl ```
 
 
 ##  Tech Stack
-
+```
 Tool                            Purpose
 
 Python                          Core programming language
@@ -272,15 +272,15 @@ Streamlit                       Web UI for predictions
 gspread                         Google Sheets integration
 joblib                          Save and load ML model
 SMOTE                           Handle class imbalance in data
-
+```
 
 ##  Model Performance
-
+```
 Model                           Accuracy
 Logistic Regression             91.7%
 Decision Tree                   92.6%
 Random Forest                   92.6%
-
+```
 Best Model:  Decision Tree / Random Forest with 92.6% accuracy
 
 ##   Setup Instructions:
@@ -415,15 +415,15 @@ streamlit run app.py
 python google_form_integration.py
 
 ##  Access Links
-
+```
 What                          URL
 Streamlit UI                 http://localhost:8501
 FastAPI Swagger              http://127.0.0.1:8000/docs
 Health Check                 http://127.0.0.1:8000/health
-
+```
 
 ##  How Google Form Integration Works
-
+```
 Student fills Google Form
         ↓
 Response automatically saved in Google Sheets
@@ -434,7 +434,7 @@ ML Model predicts registration likelihood
         ↓
 Prediction saved back to Google Sheet 
 No manual work needed!
-
+```
 
 ##   Important Notes
 
