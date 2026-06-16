@@ -272,6 +272,7 @@ Streamlit                       Web UI for predictions
 gspread                         Google Sheets integration
 joblib                          Save and load ML model
 SMOTE                           Handle class imbalance in data
+
 ```
 
 ##  Model Performance
