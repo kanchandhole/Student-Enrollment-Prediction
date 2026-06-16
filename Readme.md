@@ -2,14 +2,14 @@
 
 Percept Infosystem Consultancy — Internship Project
 
-## # Project Overview:
+##  Project Overview:
 
 During my internship at Percept Infosystem Consultancy, I worked on a student enrollment prediction project using real student inquiry data collected by the company. The dataset had limited features, with course interest (Purpose) being the most relevant column available for predicting whether a student would register or not.
 The core challenge was that the team was manually tracking student inquiries and registrations, which was time-consuming and inefficient. There was no system in place to identify which students were likely to convert into actual registrations, making it difficult for counsellors to prioritize their follow-ups.
 To solve this, I built an end-to-end machine learning system that automatically predicts whether a student will register based on their course interest. The model was trained on historical student data after thorough data cleaning, handling class imbalance using SMOTE, and encoding categorical features using OneHotEncoding.
 The solution was further integrated with the company's Google Form, so that whenever a new student submits an inquiry, the ML model automatically predicts their registration likelihood and saves the result back to Google Sheets — eliminating the need for any manual tracking.
 
-## # Problem Statement:
+##  Problem Statement:
 
 1. A training institute was collecting student inquiry data manually — recording student names, contact details, their reason for visiting (Purpose), and whether they registered or not. Over time, this data became messy and unreliable. The Purpose field was filled in freehand by different staff members, so the same intent was written in dozens of different ways — spelling mistakes like intership, placment, markrting, abbreviations like s/w for software, mixed use of /, +, & symbols, and inconsistent casing. There were also duplicate student entries, missing contact numbers, and date formats that were all over the place. To fix this, a complete data cleaning pipeline was built — standardizing text, correcting spelling mistakes using a custom clean_purpose() function, removing duplicates by prioritizing records with email addresses, fixing date formats, and dropping rows with missing critical information.
 
@@ -19,11 +19,11 @@ The solution was further integrated with the company's Google Form, so that when
 
 4. The root cause of all this inconsistency was manual data entry — staff were adding student details directly into an Excel sheet by hand, which led to all the spelling mistakes, format mismatches, and duplicate records in the first place. To solve this at the source, a Google Form integration was built so that from now on, student inquiries are collected through a structured form, automatically predicted by the ML model, and written back to the sheet — eliminating manual entry and ensuring clean, consistent data going forward.
 
-## # Solution
+##  Solution
 
 Built an end-to-end ML system that cleans and learns from historical student data, predicts whether a new student inquiry will convert into an enrollment, and automatically runs on every new Google Form submission in real time — writing the prediction result directly back into the Google Sheet every 30 seconds, without any manual effort.
 
-## # What I Built:
+##  What I Built:
 
 * Cleaned and analyzed real student enrollment data from Percept Infosystem
 * Built a Machine Learning model(Logistic Regression, Random Forest, Decision Tree) to predict student registration
@@ -32,9 +32,9 @@ Built an end-to-end ML system that cleans and learns from historical student dat
 * Integrated with the company's Google Form — predictions happen automatically when a student submits the form
 
 
-## # Project Structure:
+##  Project Structure:
 
-   EDA Student Enrollments Prediction
+"""   EDA Student Enrollments Prediction
 ├──   Data_Cleaning_student_enrollments_prediction.ipynb  # Raw data cleaning & preprocessing
 ├──   EDA_student_enrollments_prediction_.ipynb           # Exploratory Data Analysis
 ├──   Google_form_integration.py                          # Real-time Google Form automation
@@ -47,9 +47,9 @@ Built an end-to-end ML system that cleans and learns from historical student dat
 ├──   student data modified 1update.csv                   # Raw original student inquiry dataset
 ├──   1students_cleaned_checking_imblanced 1.csv          # Cleaned dataset used for EDA & training
 ├──   Requirements.txt                                    # Python dependencies
-└──   Readme.md                                           # Project documentation
+└──   Readme.md                                           # Project documentation """
 
-## # How It Works
+##   How It Works
 
 📁 Data Cleaning — Data_Cleaning_student_enrollments_prediction.ipynb
 
@@ -252,10 +252,10 @@ Standardized Registration column (lowercase, strip spaces)
         ↓
 Fitted OneHotEncoder on Purpose column → saved as encoder.pkl 
         ↓
-Fitted LabelEncoder on Registration column → saved as label_encoder.pkl 
+Fitted LabelEncoder on Registration column → saved as label_encoder.pkl """
 
 
-## # Tech Stack
+##  Tech Stack
 
 Tool                            Purpose
 
@@ -269,7 +269,7 @@ joblib                          Save and load ML model
 SMOTE                           Handle class imbalance in data
 
 
-## # Model Performance
+##  Model Performance
 
 Model                           Accuracy
 Logistic Regression             91.7%
@@ -278,25 +278,25 @@ Random Forest                   92.6%
 
 Best Model:  Decision Tree / Random Forest with 92.6% accuracy
 
-## #  Setup Instructions:
+##   Setup Instructions:
 
-# Step 1 — Clone Repository
+## Step 1 — Clone Repository
 git clone https://github.com/kanchandhole/Student-Enrollment-Prediction.git
 cd student-enrollment-prediction
 
-# Step 2 — Install Dependencies
+## Step 2 — Install Dependencies
 
 pip install -r requirements.txt
 
-# Step 3 — Run Save Artifacts (Only Once)
+## Step 3 — Run Save Artifacts (Only Once)
 
 python save_artifacts.py
 
-# Step 4 — Setup Google Cloud (For Google Form Integration)
+## Step 4 — Setup Google Cloud (For Google Form Integration)
 
 Follow every step carefully to get your own credentials.json file.
 
-# PART A — Create Google Cloud Project
+## PART A — Create Google Cloud Project
 
 1. Go to: https://console.cloud.google.com
 2. Sign in with your Google account
@@ -307,7 +307,7 @@ Follow every step carefully to get your own credentials.json file.
 7. Wait for project to be created
 8. Make sure your new project is selected at the top
 
-# PART B — Enable Google Sheets API
+## PART B — Enable Google Sheets API
 
 1. In left menu click "APIs & Services"
 2. Click "Library"
@@ -316,7 +316,7 @@ Follow every step carefully to get your own credentials.json file.
 5. Click "Enable" button
 6. Wait for it to enable
 
-# PART C — Enable Google Drive API
+## PART C — Enable Google Drive API
 
 1. Go back to "Library"
 2. In search box type: Google Drive API
@@ -324,7 +324,7 @@ Follow every step carefully to get your own credentials.json file.
 4. Click "Enable" button
 5. Wait for it to enable
 
-# PART D — Create Service Account
+## PART D — Create Service Account
 
 1. In left menu click "APIs & Services"
 2. Click "Credentials"
@@ -338,7 +338,7 @@ Follow every step carefully to get your own credentials.json file.
 7. On next screen (Grant Access) → Click "Continue" (skip this)
 8. On next screen (Grant Users) → Click "Done" (skip this)
 
-# PART E — Download credentials.json
+## PART E — Download credentials.json
 
 1. You will see your service account listed:
    student-enrollment-service@student-enrollment-xxxxx.iam.gserviceaccount.com
@@ -354,7 +354,7 @@ Follow every step carefully to get your own credentials.json file.
     C:\your-project-folder\credentials.json
 
 
-# PART F — Copy Service Account Email
+## PART F — Copy Service Account Email
 
 1. Open credentials.json file in any text editor
 2. Find the "client_email" field:
@@ -364,7 +364,7 @@ Follow every step carefully to get your own credentials.json file.
 3. Copy that email address — you will need it in next step
 
 
-# PART G — Link Google Form to Google Sheets
+## PART G — Link Google Form to Google Sheets
 
 1. Open your Google Form
 2. Click "Responses" tab at the top
@@ -374,7 +374,7 @@ Follow every step carefully to get your own credentials.json file.
 6. Click "Create"
 7. Google Sheet will open automatically with all form columns
 
-# PART H — Share Google Sheet with Service Account
+## PART H — Share Google Sheet with Service Account
 
 1. Open your Google Sheet
 2. Click "Share" button (top right corner)
@@ -384,7 +384,7 @@ Follow every step carefully to get your own credentials.json file.
 5. Uncheck "Notify people"
 6. Click "Share"
 
-# PART I — Update Sheet Name in Code
+## PART I — Update Sheet Name in Code
 
 1. Open google_form_integration.py
 2. Find this line:
@@ -393,23 +393,23 @@ Follow every step carefully to get your own credentials.json file.
    SHEET_NAME = "Your Exact Sheet Name Here"
 4. Save the file
 
-## # How to Run
+##  How to Run
 
 Open 3 terminals and run one command in each:
 
-# Terminal 1 — FastAPI Backend:
+## Terminal 1 — FastAPI Backend:
 
 uvicorn main:app --reload
 
-# Terminal 2 — Streamlit Frontend:
+## Terminal 2 — Streamlit Frontend:
 
 streamlit run app.py
 
-# Terminal 3 — Google Form Integration:
+## Terminal 3 — Google Form Integration:
 
 python google_form_integration.py
 
-## # Access Links
+##  Access Links
 
 What                          URL
 Streamlit UI                 http://localhost:8501
@@ -417,7 +417,7 @@ FastAPI Swagger              http://127.0.0.1:8000/docs
 Health Check                 http://127.0.0.1:8000/health
 
 
-## # How Google Form Integration Works
+##  How Google Form Integration Works
 
 Student fills Google Form
         ↓
@@ -431,7 +431,7 @@ Prediction saved back to Google Sheet
 No manual work needed!
 
 
-## #  Important Notes
+##   Important Notes
 
 * Never share your credentials.json — it contains your Google Cloud private key
 * Every user must create their own credentials.json following PART A to PART I above
@@ -439,7 +439,7 @@ No manual work needed!
 * All 3 terminals must stay open while using the project
 
 
-## #  About
+##   About
 
 Intern: Kanchan Charandas Dhole
 Company: Percept Infosystem Consultancy, Nagpur
