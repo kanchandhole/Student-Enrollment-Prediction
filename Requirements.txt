@@ -5,9 +5,9 @@ scikit-learn
 matplotlib
 seaborn
 joblib
-imbalanced-learnstud
-fastapi==0.111.0
-uvicorn[standard]==0.29.0
-pydantic==2.7.1
+imbalanced-learn
+fastapi
+uvicorn
+pydantic
 gspread
 google-auth
