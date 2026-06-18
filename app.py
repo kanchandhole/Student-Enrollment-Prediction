@@ -13,7 +13,7 @@ st.set_page_config(
 
 # FastAPI URL
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://student-enrollment-api-cex7.onrender.com"
 
 
 # Fixed Dropdown Options — Only Main Courses

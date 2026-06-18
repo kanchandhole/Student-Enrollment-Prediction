@@ -420,9 +420,9 @@ python google_form_integration.py
 
 ```
 What                          URL
-Streamlit UI                 http://localhost:8501
-FastAPI Swagger              http://127.0.0.1:8000/docs
-Health Check                 http://127.0.0.1:8000/health
+Streamlit UI                 https://kanchandhole-student-enrollment-prediction-app-txor8u.streamlit.app/
+FastAPI Swagger              https://student-enrollment-api-cex7.onrender.com/docs
+Health Check                 https://student-enrollment-api-cex7.onrender.com/health
 ```
 
 ##  How Google Form Integration Works
